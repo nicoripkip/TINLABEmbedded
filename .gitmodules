@@ -1,0 +1,9 @@
+[submodule "src/ti_es_gyroscope_package"]
+	path = src/ti_es_gyroscope_package
+	url = https://github.com/nicoripkip/ti_es_gyroscope_package.git
+[submodule "src/ti_es_motor_package"]
+	path = src/ti_es_motor_package
+	url = https://github.com/nicoripkip/ti_es_motor_package.git
+[submodule "src/ti_es_logger_package"]
+	path = src/ti_es_logger_package
+	url = https://github.com/nicoripkip/ti_es_logger_package.git

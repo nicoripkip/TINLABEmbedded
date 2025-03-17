@@ -18,7 +18,28 @@ See bill of materials under docs.
 
 ## Installalation
 
+1. Clone the repo
+```bash
+git clone https://github.com/nicoripkip/TINLABEmbedded.git
+```
+
+2. Move into the working directory
+```bash
+cd TINLABEmbedded
+```
+
+3. Init colcon workspace
+```bash
+colcon build
+```
+
+4. Run the given script
+```bash
+./scripts/run_nodes
+```
+
+5. Enter password
+
 ## Authors
 
 Nico van Ommen | Luco Berkhouwer | Clarence Lurfs | David Akerboom
-    1030808    |                 |                |
