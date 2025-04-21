@@ -7,3 +7,12 @@
 [submodule "src/ti_es_logger_package"]
 	path = src/ti_es_logger_package
 	url = https://github.com/nicoripkip/ti_es_logger_package.git
+[submodule "src/ti_es_keypad_screen_package"]
+	path = src/ti_es_keypad_screen_package
+	url = https://github.com/Luco-Dev/ti_es_keypad_screen_package
+[submodule "src/ti_es_gps_package"]
+	path = src/ti_es_gps_package
+	url = https://github.com/Luco-Dev/ti_es_gps_package
+[submodule "src/ti_es_keypad_screen_esp"]
+	path = src/ti_es_keypad_screen_esp
+	url = https://github.com/Luco-Dev/ti_es_keypad_screen_esp
