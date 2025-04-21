@@ -25,3 +25,6 @@
 [submodule "src/ti_es_lifecycle_manager_package"]
 	path = src/ti_es_lifecycle_manager_package
 	url = https://github.com/DavidAkerboom/ti_es_lifecycle_manager_package
+[submodule "src/ti_es_launch"]
+	path = src/ti_es_launch
+	url = https://github.com/DavidAkerboom/ti_es_launch
