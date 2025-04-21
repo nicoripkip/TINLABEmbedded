@@ -15,7 +15,9 @@ To give the firmware basic functionality for operation and easy task handling an
 
 ### 2.2 ROS
 
-For handling processes on the embedded Linux Environment an abstraction layer and framework is used to automate that process. The system used is the Robotic Operating System (ROS). Different nodes are used for separating tasks into their own processes. Because different timers are used to process different
+For handling processes on the embedded Linux Environment an abstraction layer and framework is used to automate that process. The system used is the Robotic Operating System (<a href="https://docs.ros.org/en/jazzy/index.html">ROS</a>). Different nodes are used for separating tasks into their own processes. Because different timers are used to process different processes, this is the ideal solution. 
+
+The overview of how the different packages are configured can be shown in the <a href="#">architecture diagram</a>.
 
 ## 3 Rotation system
 
@@ -38,7 +40,7 @@ The following hardware is used for the rotation system:
 - Bosch BMI160 gyroscopes
 - A4988 Motordrivers 
 
-Detailed information is specified in the <a href="#">Hardware Specification</a>.
+Detailed information is specified in the <a href="https://github.com/nicoripkip/TINLABEmbedded/blob/master/Docs/Hardware.md">Hardware Specification</a>.
 
 
 ### 3.3 System states
@@ -82,6 +84,24 @@ To make the
 </table>
 
 
+### 3.5 ROS Topics
+
+<table>
+    <tr>
+        <td>#: </td>
+        <td>Topic: </td>
+        <td>Datatype: </td>
+        <td>Format: </td>
+    </tr>
+    <tr>
+        <td>1 </td>
+        <td>/ti/es/gyro_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
+</table>
+
+
 ## 4 Location System
 
 ### 4.1 Overview
@@ -102,7 +122,7 @@ The hardware used for the Localisation System:
 
 - Adafruit GPS
 
-Detailed information is specified in the <a href="#">Hardware Specification</a>.
+Detailed information is specified in the <a href="https://github.com/nicoripkip/TINLABEmbedded/blob/master/Docs/Hardware.md">Hardware Specification</a>.
 
 ### 4.3 Error messages
 
@@ -138,23 +158,61 @@ When the GPS module failes it generates a few error messages. These error messag
 
 To feed coordinates into the system an input module is needed. This input module is constructed of a keypad an a display to insert the coordinates and to validate it's correctness. The display is besides validating the coordinates also used to display any error messages and used for informing the user of the state of the telescope.
 
-The keypad is also used besided feeding coordinates into the system for navigating through the menu 
+The keypad is also used besided feeding coordinates into the system for navigating through the menu of the telescope. In the menu different things can be selected. These are the following menu options: 
+
+- Insert manual location.
+- Insert manual celestial object location.
+- Select preset location.
+- Select preset celestial object.
+
+To navigate the menu different keys are used for different functions.
+
+- The 1...9 keys are used to input numbers into the system.
+- The X key is used to select an option.
+- The A key is used to go back from an option.
 
 
-## 6.2 Hardware
+### 5.2 Hardware
 
 The hardware used for the User Interface System
 
 
-## 9 Environmental Monitoring System
+### 5.3 Error messages
+
+When components in the user interface module failes 
+
+<table>
+    <tr>
+        <td>#: </td>
+        <td>Error message: </td>
+        <td>Warning: </td>
+        <td>Critical: </td>
+    </tr>
+    <tr>
+        <td>1 </td>
+        <td>GPS Sensor not responding. </td>
+        <td> </td>
+        <td>X </td>
+    </tr>
+    <tr>
+        <td>2 </td>
+        <td>Can't connect to satelites. </td>
+        <td> </td>
+        <td>X </td>
+    </tr>
+</table>
 
 
-## 6 Object avoidance system
+
+## 6 Environmental Monitoring System
 
 
-## 7 Star tracking System
+## 7 Object avoidance system
 
 
-## 8 Logging System
+## 8 Star tracking System
+
+
+## 9 Logging System
 
 
