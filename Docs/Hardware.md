@@ -10,6 +10,8 @@ The electrical diagram is another reference document which can be used parallel 
 
 ## 2. Raspberry PI 4b
 
+As microcontroller/microprocessor
+
 ### 2.1 Operating System
 
 ### 2.2 Power specification
@@ -20,6 +22,7 @@ The Nema 17 motors are bipolar steppermotors to
 
 ### 3.1 Pinout
 
+### 3.2 Power specification
 
 ## 4 Sensors
 

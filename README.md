@@ -2,7 +2,18 @@
 
 ## About
 
-This repo contains all the files for the project for TINLAB Embedded Systems at the Rotterdam University of Applied Sciences. 
+This repo contains all the files for the project for the course TINLAB Embedded Systems at the Rotterdam University of Applied Sciences. This course teaches students to build their own embedded system and to document it. 
+
+The Project I and my team has done is to track visible celestial objects in the sky 
+
+To learn about the functionality of the telescope, go read the <a href="#">Functional Specification</a> here.
+
+
+
+## Hardware
+
+To see which hardware is used in the project and how it is configured, look at the <a href="https://github.com/nicoripkip/TINLABEmbedded/blob/master/Docs/Hardware.md">Hardware Specification</a> here.
+
 
 ## Dependencies
 
@@ -12,9 +23,6 @@ This repo contains all the files for the project for TINLAB Embedded Systems at 
 - RPi.GPIO (python)
 - OpenCV (python)
 
-## Hardware
-
-See bill of materials under docs.
 
 ## Installalation
 
