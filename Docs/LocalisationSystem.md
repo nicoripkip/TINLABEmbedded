@@ -66,5 +66,5 @@ Or for non-GPS modes:
 ## Related Topics
 
 - For the actual coordinate transformation logic, see:  
-  [equatorialcoordinatesystem.md](./equatorialcoordinatesystem.md)
+  [equatorialcoordinatesystem.md](./EquatorialCoordinateSystem.md)
 
