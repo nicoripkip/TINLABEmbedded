@@ -17,7 +17,6 @@ This document outlines the functional and integration test results for each majo
 - OLED Display (I2C)
 - 4x4 Matrix Keypad
 - Ultrasonic Distance Sensor (HC-SR04)
-- Custom PCB with I2C/SPI interfaces
 
 **Software:**
 - ROS 2 (Jazzy)
