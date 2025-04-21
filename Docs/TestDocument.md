@@ -20,7 +20,7 @@ This document outlines the functional and integration test results for each majo
 - Custom PCB with I2C/SPI interfaces
 
 **Software:**
-- ROS 2 (Jazzy)
+- ROS 2 (Humble)
 - Custom Nodes (as listed in source repositories)
 - Python-based simulation tools
 
@@ -33,7 +33,8 @@ This document outlines the functional and integration test results for each majo
 ### 🌡️ Temperature and Humidity Sensor
 
 **Node:** `ti_es_temperature_humidity_node.py`  
-**Goal:** Measure the ambient temperature and humidity.
+**Goal:** Measure the ambient temperature and humidity.  
+**Repository:** [ti_es_temperature_humidity_package](https://github.com/DavidAkerboom/ti_es_temperature_humidity_package)
 
 **Test Scenarios:**
 - Data retrieved every 2 seconds ✔️
@@ -52,7 +53,8 @@ This document outlines the functional and integration test results for each majo
 ### 🛰️ GPS Module
 
 **Node:** `ti_es_gps_node.py`  
-**Goal:** Determine the geographical location of the telescope.
+**Goal:** Determine the geographical location of the telescope.  
+**Repository:** [ti_es_gps_package](https://github.com/Luco-Dev/ti_es_gps_package)
 
 **Test Scenarios:**
 - Local GPS fix tested at various locations ✔️  
@@ -71,7 +73,8 @@ This document outlines the functional and integration test results for each majo
 ### 🧭 Gyroscope (IMU)
 
 **Node:** `ti_es_gyroscope_node.py`  
-**Goal:** Monitor angular velocities and orientation.
+**Goal:** Monitor angular velocities and orientation.  
+**Repository:** [ti_es_gyroscope_package](https://github.com/nicoripkip/ti_es_gyroscope_package)
 
 **Test Scenarios:**
 - Simulated fast rotations with test platform ✔️  
@@ -90,7 +93,8 @@ This document outlines the functional and integration test results for each majo
 ### 📟 Keypad & Display
 
 **Node:** `ti_es_keypad_screen_node.py`  
-**Goal:** User interface for entering and displaying coordinates.
+**Goal:** User interface for entering and displaying coordinates.  
+**Repository:** [ti_es_keypad_screen_package](https://github.com/Luco-Dev/ti_es_keypad_screen_package)
 
 **Test Scenarios:**
 - All 16 keys correctly registered ✔️  
@@ -109,7 +113,8 @@ This document outlines the functional and integration test results for each majo
 ### 📏 Distance Sensor
 
 **Node:** `ti_es_distance_sensor_node.py`  
-**Goal:** Detect objects in the telescope's rotation path.
+**Goal:** Detect objects in the telescope's rotation path.  
+**Repository:** [ti_es_distance_sensor_package](https://github.com/Tecert/ti_es_distance_sensor_package)
 
 **Test Scenarios:**
 - Obstruction simulated at 10, 50, 150cm ✔️  
@@ -128,7 +133,8 @@ This document outlines the functional and integration test results for each majo
 ### ⚙️ Lifecycle Manager
 
 **Node:** `ti_es_lifecycle_manager_node.py`  
-**Goal:** Manage system states (INIT, ACTIVE, ERROR).
+**Goal:** Manage system states (INIT, ACTIVE, ERROR).  
+**Repository:** [ti_es_lifecycle_manager_package](https://github.com/DavidAkerboom/ti_es_lifecycle_manager_package)
 
 **Test Scenarios:**
 - INIT -> ACTIVE transition after confirmed input ✔️  
@@ -147,7 +153,8 @@ This document outlines the functional and integration test results for each majo
 ### 📝 Logger
 
 **Node:** `ti_es_logger_node.py`  
-**Goal:** Log system status and key measurements.
+**Goal:** Log system status and key measurements.  
+**Repository:** [ti_es_logger_package](https://github.com/nicoripkip/ti_es_logger_package)
 
 **Test Scenarios:**
 - Data logged every 0.5s in CSV format ✔️  
@@ -166,7 +173,8 @@ This document outlines the functional and integration test results for each majo
 ### 🔧 Motors and Control
 
 **Node:** `ti_es_motor_node.py`  
-**Goal:** Control three motors for telescope orientation.
+**Goal:** Control three motors for telescope orientation.  
+**Repository:** [ti_es_motor_package](https://github.com/nicoripkip/ti_es_motor_package)
 
 **Test Scenarios:**
 - PID control tested on various rotation commands ✔️  
@@ -243,4 +251,3 @@ The system functions as expected, with all components interacting correctly. The
 - Implementing automated star tracking using real-time feedback from sensors.
 - Further testing under various environmental conditions (temperature extremes, high humidity).
 - Potential future integration with external services like Stellarium or KNMI for real-time weather data.
-
