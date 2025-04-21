@@ -40,6 +40,10 @@ colcon build
 
 5. Enter password
 
+## References
+
+To read more about the project, checkout the this <A href="#">wiki</a> to learn more
+
 ## Authors
 
 Nico van Ommen | Luco Berkhouwer | Clarence Lurfs | David Akerboom
