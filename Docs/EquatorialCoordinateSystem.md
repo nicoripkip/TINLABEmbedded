@@ -1,0 +1,1 @@
+# Research into Equatorial Coordinate System
