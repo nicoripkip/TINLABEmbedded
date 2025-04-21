@@ -16,3 +16,12 @@
 [submodule "src/ti_es_keypad_screen_esp"]
 	path = src/ti_es_keypad_screen_esp
 	url = https://github.com/Luco-Dev/ti_es_keypad_screen_esp
+[submodule "src/ti_es_distance_sensor_package"]
+	path = src/ti_es_distance_sensor_package
+	url = https://github.com/Tecert/ti_es_distance_sensor_package
+[submodule "src/ti_es_temperature_humidity_package"]
+	path = src/ti_es_temperature_humidity_package
+	url = https://github.com/DavidAkerboom/ti_es_temperature_humidity_package/
+[submodule "src/ti_es_lifecycle_manager_package"]
+	path = src/ti_es_lifecycle_manager_package
+	url = https://github.com/DavidAkerboom/ti_es_lifecycle_manager_package
