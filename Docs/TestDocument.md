@@ -20,7 +20,7 @@ This document outlines the functional and integration test results for each majo
 - Custom PCB with I2C/SPI interfaces
 
 **Software:**
-- ROS 2 (Humble)
+- ROS 2 (Jazzy)
 - Custom Nodes (as listed in source repositories)
 - Python-based simulation tools
 
