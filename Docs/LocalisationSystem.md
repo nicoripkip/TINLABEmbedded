@@ -1,11 +1,5 @@
 # Localisation
 
-**Luco Berkouwer**  
-Hogeschool Rotterdam, Wijnhaven (CMI), Netherlands  
-Email: 1036570@hr.nl
-
----
-
 ## Abstract
 
 Accurate localisation is a critical prerequisite for astronomical tracking systems, particularly in autonomous telescope applications. This section outlines the design and implementation of a flexible localisation module using ROS 2 and the Skyfield Python library. The system supports multiple origin selection modes and provides consistent input to a coordinate transformation pipeline. Challenges addressed include GPS signal reliability, menu interaction with embedded displays, and synchronizing serial communication within ROS 2 nodes. This localisation method forms the spatial foundation for the system described further in the companion document: [EquatorialCoordinateSystem.md](./EquatorialCoordinateSystem.md).
