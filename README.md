@@ -36,17 +36,22 @@ git clone https://github.com/nicoripkip/TINLABEmbedded.git
 cd TINLABEmbedded
 ```
 
-3. Init colcon workspace
+3. Clone the submodules
+```bash
+git submodule update --init
+```
+
+4. Init colcon workspace
 ```bash
 colcon build
 ```
 
-4. Run the given script
+5. Run the given script
 ```bash
 ./scripts/run_nodes
 ```
 
-5. Enter password
+6. Enter password (sudo)
 
 ## References
 
