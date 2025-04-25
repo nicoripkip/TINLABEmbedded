@@ -17,7 +17,7 @@ To give the firmware basic functionality for operation and easy task handling an
 
 For handling processes on the embedded Linux Environment an abstraction layer and framework is used to automate that process. The system used is the Robotic Operating System (<a href="https://docs.ros.org/en/jazzy/index.html">ROS</a>). Different nodes are used for separating tasks into their own processes. Because different timers are used to process different processes, this is the ideal solution. 
 
-The overview of how the different packages are configured can be shown in the <a href="#">architecture diagram</a>.
+The overview of how the different packages are linked can be shown in the <a href="#">architecture diagram</a>.
 
 ## 3 Rotation system
 
@@ -99,6 +99,18 @@ To make the
         <td>String </td>
         <td>JSON </td>
     </tr>
+    <tr>
+        <td>2 </td>
+        <td>/ti/es/motor_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
+    <tr>
+        <td>3 </td>
+        <td>/ti/es/logger_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
 </table>
 
 
@@ -150,6 +162,30 @@ When the GPS module failes it generates a few error messages. These error messag
 </table>
 
 
+### 4.4 ROS Topics
+
+<table>
+    <tr>
+        <td>#: </td>
+        <td>Topic: </td>
+        <td>Datatype: </td>
+        <td>Format: </td>
+    </tr>
+    <tr>
+        <td>1 </td>
+        <td>/ti/es/gps_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
+    <tr>
+        <td>3 </td>
+        <td>/ti/es/logger_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
+</table>
+
+
 
 ## 5 User Interface System
 
@@ -174,8 +210,9 @@ To navigate the menu different keys are used for different functions.
 
 ### 5.2 Hardware
 
-The hardware used for the User Interface System
+The hardware used for the User Interface System:
 
+Detailed information is specified in the <a href="https://github.com/nicoripkip/TINLABEmbedded/blob/master/Docs/Hardware.md">Hardware Specification</a>.
 
 ### 5.3 Error messages
 
@@ -190,15 +227,39 @@ When components in the user interface module failes
     </tr>
     <tr>
         <td>1 </td>
-        <td>GPS Sensor not responding. </td>
+        <td>Keypad not responding. </td>
         <td> </td>
         <td>X </td>
     </tr>
     <tr>
         <td>2 </td>
-        <td>Can't connect to satelites. </td>
+        <td>Display not connected. </td>
         <td> </td>
         <td>X </td>
+    </tr>
+</table>
+
+
+### 5.4 ROS Topics
+
+<table>
+    <tr>
+        <td>#: </td>
+        <td>Topic: </td>
+        <td>Datatype: </td>
+        <td>Format: </td>
+    </tr>
+    <tr>
+        <td>1 </td>
+        <td>/ti/es/gps_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
+    <tr>
+        <td>3 </td>
+        <td>/ti/es/logger_data </td>
+        <td>String </td>
+        <td>JSON </td>
     </tr>
 </table>
 
@@ -206,13 +267,79 @@ When components in the user interface module failes
 
 ## 6 Environmental Monitoring System
 
+### 6.1 Overview
+
+The telescope is an electronic and optical device that is going to be used outside the house. When people live in the more northren countries, it can be really humid outside. Because the electronics emid heat and when it's cold outside, condens can be forming onto the critical components and this can damage the compoments. To prevent damaging from happening a humidity sensor makes readings of the humidity levels inside the enclosure of the telescope.
+
+When the telescope reaches a certain level, the humidity sensor will send a disabling request to the telescope and the telescope will shutdown. 
+
+The outside temperature is also red with the sensor, this is handy for logging the sessions with the weather patterns.
+
+### 6.2 Hardware
+
+The hardware used for the environmental monitoring system:
+
+- Temperature sensor
+- Humidity sensor
+
+Detailed information is specified in the <a href="https://github.com/nicoripkip/TINLABEmbedded/blob/master/Docs/Hardware.md">Hardware Specification</a>.
+
+### 6.3 Error Messages
+
+### 6.4 ROS Topics
+
+<table>
+    <tr>
+        <td>#: </td>
+        <td>Topic: </td>
+        <td>Datatype: </td>
+        <td>Format: </td>
+    </tr>
+    <tr>
+        <td>1 </td>
+        <td>/ti/es/gps_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
+    <tr>
+        <td>3 </td>
+        <td>/ti/es/logger_data </td>
+        <td>String </td>
+        <td>JSON </td>
+    </tr>
+</table>
+
+
 
 ## 7 Object avoidance system
+
+### 7.1 Overview
+
+### 7.2 Hardware
+
+### 7.3 Error Messages
+
+### 7.4 ROS Topics
 
 
 ## 8 Star tracking System
 
+### 8.1 Overview
+
+### 8.2 Hardware
+
+### 8.3 Error Messages
+
+### 8.4 ROS Topics
+
 
 ## 9 Logging System
 
+### 9.1 Overview
+
+### 9.2 Hardware
+
+### 9.3 Error Messages
+
+### 9.4 ROS Topics
 

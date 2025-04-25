@@ -25,7 +25,11 @@ Most ground is natural and not as flat as most people hope to be. But because to
 
 ## 4.1 Wall power
 
-As the EQ mount required a lot of power 
+As the EQ mount required a lot of power it is adviced to plug the telescope onto wallpower if possible. The connector of the telescope is a XT60 connector for 12v of power. Use a transformator to convert 230/120 volts of power to 12 volts of power.
+
+## 4.2 Mobile power
+
+Batteries can be used to power the telescope, because a XT60 connector is used to connect power to the telescope. It is important to note that the power requirements are 12V and at least 6 amps of power. 
 
 
 ## 5 Calibrating
